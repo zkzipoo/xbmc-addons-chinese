@@ -23,7 +23,7 @@ __language__ = addon.getLocalizedString
 rootDir = addon.getAddonInfo('path')
 rootDir = xbmc.translatePath(rootDir)
 url1 = 'http://www.dnvod.tv'
-url2 = 'http://www.dnvod.tv/Movie/Readyplay.aspx?id=7COqHhPaRZg%3d'
+url2 = 'http://www.dnvod.tv/Movie/GetResource.ashx?device=0&id=t8zREGeU7Q0%3d&type=htm'
 #get ASP.NET_SessionId
 def getSessionID (url1,url2):
     s=requests.Session()
@@ -43,7 +43,7 @@ def getUserAgent():
     user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
     return user_agent
 
-#sessionID = getSessionID(url1,url2)[0]
+sessionID = getSessionID(url1,url2)[0]
 cookies = getCookies()
 user_agent = getUserAgent()
 
