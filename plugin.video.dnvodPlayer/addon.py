@@ -43,7 +43,7 @@ def getUserAgent():
     user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
     return user_agent
 
-sessionID = getSessionID(url1,url2)[0]
+#sessionID = getSessionID(url1,url2)[0]
 cookies = getCookies()
 user_agent = getUserAgent()
 
